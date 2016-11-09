@@ -80,6 +80,12 @@ namespace App01.Facts {
         Assert.Equal("value1", ex.ParamName);
       }
 
+      [Fact]
+      public void AddTwoDigits() {
+       var result =  c.Add("11", "25");
+        Assert.Equal("36", result);
+      }
+
       // Teardown
       public void Dispose() {
         c = null; 
